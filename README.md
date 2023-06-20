@@ -38,7 +38,6 @@ In summary, this regular expression can be used to match phone numbers in the fo
 ## Anchors
 `/^` and `$/` indicate the start and end of the string, respectively. This ensures that the entire string is matched and not just a portion of it.
 
-
 ## Quantifiers
 - `?` - The question mark quantifier makes the preceding character or group optional. In this pattern, it is used after the opening and closing parentheses `\(` and `\)` to indicate that they are optional. This allows for phone numbers to be provided with or without parentheses around the area code.
 
@@ -46,9 +45,6 @@ In summary, this regular expression can be used to match phone numbers in the fo
 
 These quantifiers modify the behavior of the regular expression and allow for flexibility in the matching pattern.
 
-<br>
-
----
 ## OR Operator
 In this regular expression pattern, the OR operator is not explicitly used. However, there are elements within the pattern that provide options, achieving a similar effect to the OR operator.
 
@@ -58,9 +54,6 @@ For example, `[-. ]?` matches an optional character that can be a hyphen, dot, o
 
 By using character classes and ranges, the pattern can match different variations of separators between digits, such as hyphens, dots, or spaces.
 
-<br>
-
----
 ## Character Classes
 There are two instances of character classes:
 
@@ -70,9 +63,6 @@ There are two instances of character classes:
 
 Character classes are enclosed within square brackets `[ ]` and define a set of characters that can match at a particular position in the pattern. By using character classes, the regular expression can be flexible and match different characters within a specified range or set of options.
 
-<br>
-
----
 ## Flags
 There are no flags used in this expression.
 
@@ -87,9 +77,6 @@ Common flags used in regular expressions include:
 - `m (multiline)` - Changes the behavior of the `^` and `$` anchors, making them match the start and end of each line within a multiline input string.
 However, in the given regular expression pattern, no flags are present. It is a simple pattern for matching phone numbers in a specific format.
 
-<br>
-
----
 ## Grouping and Capturing
 This pattern uses parentheses `( )` to define groups that capture specific portions of the matched string. These captured groups can be referenced or extracted later for further processing.
 
@@ -99,9 +86,6 @@ This pattern uses parentheses `( )` to define groups that capture specific porti
 
 - `([0-9]{4})` - This group captures the last four digits of the phone number.
 
-<br>
-
----
 ## Bracket Expressions
 The bracket expression used in this pattern is `[0-9]`, which matches any single digit from `0` to `9`. It represents a character class that specifies a range of characters that can match at a particular position in the pattern.
 
@@ -113,9 +97,6 @@ The bracket expression used in this pattern is `[0-9]`, which matches any single
 
 - `([0-9]{4})` - This matches exactly four consecutive digits `(0-9)`, representing the last four digits of the phone number.
 
-<br>
-
----
 ## Greedy and Lazy Match
 There are no explicit greedy or lazy matches used in this expression.
 
@@ -123,9 +104,6 @@ Greedy and lazy quantifiers determine the behavior of the matching process when 
 
 Instead, the pattern uses optional characters and character classes to allow for flexibility in matching different formats of phone numbers. The quantifiers `? (indicating zero or one occurrence)` and `{3} (indicating exactly three occurrences)` specify the exact number of digits to be matched.
 
-<br>
-
----
 ## Boundaries
 `^` - The caret symbol at the beginning of the pattern represents the start of a line or string. It asserts that the following pattern should match at the beginning of the input.
 
@@ -135,9 +113,6 @@ Together, `^` and `$` form the start and end boundaries of the input string. Thi
 
 By using these boundary anchors, the regular expression enforces that the phone number must match the specified format completely, without any additional characters before or after.
 
-<br>
-
----
 ## Back-references
 Back-references are used in regular expressions to refer back to a previously matched group within the same pattern. They are typically represented by the backslash followed by a digit `(e.g., \1, \2, etc.)` corresponding to the capturing group's position.
 
@@ -145,9 +120,6 @@ However, in the given pattern, there are capturing groups `( )`, but they are no
 
 For example, in a programming language or regular expression engine that supports back-references, you can use the captured groups to reference or extract the area code, three-digit section, and four-digit section of the phone number separately. But within the pattern itself, there are no back-references used.
 
-<br>
-
----
 ## Look-ahead and Look-behind
 Look-ahead and look-behind assertions are advanced techniques in regular expressions that allow for conditional matching based on patterns that precede or follow the current position in the input string. They are represented by `(?=...)` for look-ahead and `(?<=...)` for look-behind.
 
@@ -155,9 +127,6 @@ In the given pattern, there are no instances of these look-around assertions. Th
 
 Without look-ahead or look-behind assertions, the pattern will match phone numbers that strictly adhere to the provided format, without considering any specific context or conditions before or after the phone number.
 
-<br>
-
----
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
