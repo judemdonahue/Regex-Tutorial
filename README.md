@@ -4,14 +4,9 @@ The purpose of this Regex tutorial is to provide an explanation of how regular e
 
 # Summary
 
-<br>
-
 ## `/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/`
 
-<br>
 In summary, this regular expression can be used to match phone numbers in the following formats:
-
-<br>
 
 - `555-123-4567`
 - `555.123.4567`
@@ -43,9 +38,7 @@ In summary, this regular expression can be used to match phone numbers in the fo
 ## Anchors
 `/^` and `$/` indicate the start and end of the string, respectively. This ensures that the entire string is matched and not just a portion of it.
 
-<br>
 
----
 ## Quantifiers
 - `?` - The question mark quantifier makes the preceding character or group optional. In this pattern, it is used after the opening and closing parentheses `\(` and `\)` to indicate that they are optional. This allows for phone numbers to be provided with or without parentheses around the area code.
 
